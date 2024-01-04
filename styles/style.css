@@ -564,7 +564,7 @@ main{
 @media screen and (min-width: 769px) and (max-width: 1250px){
         
     .logo__empresa{
-        min-width: 170px;
+        min-width: 100px;
         max-width: 125px;
     }
 
