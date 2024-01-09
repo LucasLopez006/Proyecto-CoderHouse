@@ -1087,33 +1087,44 @@ footer {
     color: #86471a;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    max-height: 250px;
 }
 
-footer  div {
-    max-width: 70%;
+.contenedor__footer {
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.contenido__contacto {
+    text-align: left; 
 }
 
 footer p {
-    max-width: 400px;
     color: gray;
-    background-color: #f9f2cc;
     padding: 8px 10px;
     border-radius: 10px;
     font-family: Kanit;
-    text-align: left;
 }
 
-footer h3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer h3 {
     max-width: 200px;
     margin: 0 auto;
     font-family: Jost;
     font-size: 1.5rem;
 }
+
+.iconos__redes img {
+    width: 30px; 
+    height: 30px;
+}
+
 }
