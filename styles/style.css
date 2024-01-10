@@ -11,7 +11,7 @@ body{
 
 /* Paginas responsive */
 
-@media screen and (min-width: 300px) and (max-width: 614px) {
+@media screen and (min-width: 360px) and (max-width: 614px) {
 
     .logo__empresa{
         min-width: 90px;
@@ -867,11 +867,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 150px;
 }
 
 header a{
-    color: #f9f2cc;
-    background-color: #3f1e09;
+    color: #3f1e09;
     padding: 8px 10px;
     border-radius: 10px;
 }
@@ -887,6 +887,14 @@ header h1{
 header nav ul{
     display: flex;
     gap: 1rem;
+}
+
+.link__header:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    transition-duration: .5s;
+    background-color: #ebcd54;
+    border-radius: 15px;
 }
 
 /* Main */
@@ -1089,7 +1097,7 @@ footer {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    max-height: 250px;
+    max-height: 280px;
 }
 
 .contenedor__footer {
@@ -1102,6 +1110,7 @@ footer {
     grid-template-columns: auto 1fr auto;
     gap: 20px;
     align-items: center;
+    padding:25px;
 }
 
 .contenido__contacto {
@@ -1113,6 +1122,7 @@ footer p {
     padding: 8px 10px;
     border-radius: 10px;
     font-family: Kanit;
+    font-size: 1.1rem;
 }
 
 footer h3 {
@@ -1120,11 +1130,18 @@ footer h3 {
     margin: 0 auto;
     font-family: Jost;
     font-size: 1.5rem;
+    padding-bottom: 10px;
 }
 
-.iconos__redes img {
-    width: 30px; 
-    height: 30px;
+.logos__redes{
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
+.logos__redes:hover{
+    transform: scale(1.3);
+    transition: .5s;
+    transition-duration: .5s;
 }
 
 }
