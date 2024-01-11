@@ -15,8 +15,24 @@ $display-grid: grid;
 $display-flex: flex;
 $align-center: center;
 $width-100: 100%;
-@use "_reseteomargen.scss";
-@use "_fondosections.scss";
+
+/* Reseteo de margenes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondos para las secciones. */
+
+footer, header, body{
+    background-color: $background-color;
+}
+
+main{
+    background-color: $main-background;
+}
 
 /* Estilos en las listas y texto. ( MediaQueries 365px-2140px ) */
 
@@ -1562,6 +1578,8 @@ header nav ul{
 .contenedor__elegirnos{
     display: $display-grid;
     grid-template-columns: repeat(3,1fr);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .elegirnos__iconos{
@@ -1597,6 +1615,7 @@ header nav ul{
     display: $display-grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    padding-left: 150px;
 }
 
 .article__felinos{
@@ -1630,6 +1649,7 @@ header nav ul{
     display: $display-grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    padding-left: 45px;
 }
 
 .titulo__seccion{

@@ -1,11 +1,11 @@
-/* Reseteo del margen. */
+/* Reseteo de margenes */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fondos de colores para las secciones. */
+/* Fondos para las secciones. */
 footer, header, body {
   background-color: #f3e394;
 }
@@ -14,8 +14,8 @@ main {
   background-color: #f9f2cc;
 }
 
-/* Estilos en las listas y texto. ( MediaQuerie 1251-2140px ) */
-@media screen and (min-width: 360px) and (max-width: 559px) {
+/* Estilos en las listas y texto. ( MediaQueries 365px-2140px ) */
+@media screen and (min-width: 365px) and (max-width: 559px) {
   .logo__empresa {
     max-width: 100px;
   }
@@ -1317,6 +1317,8 @@ main {
   .contenedor__elegirnos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .elegirnos__iconos {
     min-width: 50px;
@@ -1347,6 +1349,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-left: 150px;
   }
   .article__felinos {
     display: flex;
@@ -1375,6 +1378,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding-left: 45px;
   }
   .titulo__seccion {
     text-align: center;
