@@ -1,1038 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reseteo del margen. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* body */
-body{
-    background-color: #f3e394;
+/* Fondos de colores para las secciones. */
+footer, header, body {
+  background-color: #f3e394;
 }
 
-/* Paginas responsive */
-
-@media screen and (min-width: 360px) and (max-width: 614px) {
-
-    .logo__empresa{
-        min-width: 90px;
-        max-width: 75px;
-    }
-
-    ul,li{
-        list-style: none;
-        font-family: kanit;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    /* Header */
-
-    header{
-        background-color: #f3e394;
-        padding: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header h1{
-        color: #fdfbed;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Nova square;
-        font-size: 1em;
-    }
-
-    header a{
-        color: #f9f2cc;
-        font-size: 0.5em;
-    }
-
-    ul{
-        background-color: #3f1e09;
-        padding: 2px 5px;
-        border-radius: 10px;
-    }
-
-    /*Main*/
-
-    main{
-        background-color: #f9f2cc;
-    }
-
-    /*Inicio*/
-
-    .combos__section {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 5px;
-        margin: 0; 
-    }
-
-    .combo__semanal1, .combo__semanal2, .combo__semanal3 {
-        display: grid;
-        grid-template-rows: auto 1fr;
-        justify-items: center;
-    }
-
-        .img__combos {
-        max-width: 210px; 
-        max-height: 220px;
-        padding: 1rem;
-    }
-
-    
-    .text__combos {
-        max-width: 50%; 
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px; 
-    }
-
-    /* Nosotros */
-
-    .section__title{
-        color: #a45a19;
-        padding: 1rem;
-        font-family: mukta;
-    }
-    
-    .section__text{
-        color: #c67c19;
-        min-width: 360px;
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 0;
-        font-family: nunito;
-        font-size: 1em;
-    }
-    
-    .section__iframe{
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        max-width: 350px;
-    }
-    
-    .nosotros__main {
-        display: flex;
-        flex-direction: column; 
-        flex-wrap: wrap;
-    }
-    
-    .quienes__somos,
-    .donde__encontrarnos {
-        width: calc(50% - 10px); 
-        margin-bottom: 20px; 
-        box-sizing: border-box; 
-    }   
-
-    .quienes__somos h2,
-    .donde__encontrarnos h2 {
-        text-align: center;
-        min-width: 150px;
-        font-size: 1.2em;
-    } 
-    
-    /* Elegirnos */
-
-    .contenedor__elegirnos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .elegirnos__iconos{
-        min-width: 40px;
-        margin-bottom: 10px;
-    }
-    
-    .div__elegirnos{
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        text-align: center; 
-        margin: 0 auto;
-    }
-    
-    .elegirnos__text{
-        max-width: 300px; 
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: center;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px; 
-        font-size: 0.8em;
-    }
-
-    /* Felinos */
-    .contenedor__felinos {
-        display: grid;
-        grid-template-rows: auto;
-        gap: 20px; 
-        align-content: center;
-    }
-    
-    .article__felinos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 400px;
-        overflow: hidden;
-        padding: 2rem;
-    }
-    
-    .img__felinos {
-        max-width: 100%;
-        padding: 1rem;
-    }
-    
-    .texto__felinos {
-        color: #f9f2cc;
-        max-width: 500px;
-        padding: 1rem;
-        font-family: nunito;
-        text-align: left;
-        background-color: #3f1e09;
-        border-radius: 15px;
-    }
-    
-    /* Productos */
-
-    .contenedor__productos {
-        display: grid;
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    
-    .titulo__seccion {
-        text-align: center;
-    }
-    
-    .div__productos {
-        display: grid;
-        grid-template-rows: auto 1fr; 
-        align-items: center;
-        max-width: 350px;
-        padding-left: 70px;
-    }
-    
-    .images__productos {
-        max-width: 220px;
-        max-height: 250px;
-        padding: 0.5rem;
-    }
-    
-    .text__productos {
-        max-width: 200px;
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px;
-    }
-
-    /* Footer */
-
-    footer{
-        background-color: #f3e394;
-        color: #86471a;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .ayuda__section{
-        grid-column: span 2;
-    }
-
-    footer p {
-        max-width: 100%;
-        color: gray;
-        background-color: #f9f2cc;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-    }
-
-    footer h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 200px;
-        margin: 0 auto;
-        font-family: Jost;
-    }
+main {
+  background-color: #f9f2cc;
 }
 
-@media screen and (min-width: 615px) and (max-width: 768px){
-    
-    .logo__empresa{
-        min-width: 120px;
-        max-width: 95px;
-    }
-
-    ul,li{
-        list-style: none;
-        font-family: kanit;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-main{
-    background-color: #f9f2cc;
-}
-
-    /* Header */
-
-    header{
-        background-color: #f3e394;
-        padding: 0.8rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header h1{
-        color: #fdfbed;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Nova square;
-        font-size: 1em;
-    }
-
-    header a{
-        color: #f9f2cc;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-size: 0.7em;
-    }
-
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        color: #f9f2cc;
-        background-color: #3f1e09;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-size: 1em;
-    }
-
-    /*Inicio*/
-
-    .combos__section {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 5px;
-        margin: 0; 
-    }
-
-    .combo__semanal1, .combo__semanal2, .combo__semanal3 {
-        display: grid;
-        grid-template-rows: auto 1fr;
-        justify-items: center;
-    }
-
-        .img__combos {
-        max-width: 210px; 
-        max-height: 220px;
-        padding: 1rem;
-    }
-
-    
-    .text__combos {
-        max-width: 50%; 
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px; 
-    }
-
-    /* Nosotros */
-
-    .section__title{
-        color: #a45a19;
-        padding: 1rem;
-        font-family: mukta;
-    }
-    
-    .section__text{
-        color: #c67c19;
-        min-width: 600px;
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 0;
-        font-family: nunito;
-        font-size: 0.9em;
-    }
-    
-    .section__iframe{
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        min-width: 200px;
-    }
-    
-    .nosotros__main {
-        display: flex;
-        flex-direction: column; 
-        flex-wrap: wrap;
-    }
-    
-    .quienes__somos,
-    .donde__encontrarnos {
-        width: calc(50% - 10px); 
-        margin-bottom: 20px; 
-        box-sizing: border-box; 
-    }   
-
-    .quienes__somos h2,
-    .donde__encontrarnos h2 {
-        text-align: center;
-        min-width: 600px;
-        font-size: 1.2em;
-    }   
-
-    /* Elegirnos */
-
-    .contenedor__elegirnos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .elegirnos__iconos{
-        min-width: 50px;
-        margin-bottom: 10px;
-    }
-    
-    .div__elegirnos{
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        text-align: center; 
-        margin: 0 auto;
-    }
-    
-    .elegirnos__text{
-        max-width: 300px; 
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: center;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px; 
-        font-size: 0.8em;
-    }
-
-    /* Felinos */
-    .contenedor__felinos {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px; 
-    }
-    
-    .article__felinos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 400px;
-        overflow: hidden;
-        padding: 2rem;
-    }
-    
-    .img__felinos {
-        max-width: 100%;
-        padding: 1rem;
-    }
-    
-    .texto__felinos {
-        color: #ebcd54;
-        max-width: 500px;
-        padding: 1rem;
-        font-family: nunito;
-        text-align: left;
-        background-color: #8d631b;
-        border-radius: 15px;
-    }
-    
-    /* Productos */
-
-.contenedor__productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.titulo__seccion {
-    text-align: center;
-}
-
-.div__productos {
-    display: grid;
-    grid-template-rows: auto 1fr; 
-    align-items: center;
-    max-width: 350px;
-    padding-left: 70px;
-}
-
-.images__productos {
-    max-width: 220px;
-    max-height: 250px;
-    padding: 0.5rem;
-}
-
-.text__productos {
-    max-width: 200px;
-    color: #3f1e09;
-    background-color: #ebcd54;
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-family: Kanit;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 10px;
-}
-
-    /* Footer */
-
-    footer{
-        background-color: #f3e394;
-        color: #86471a;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .ayuda__section{
-        grid-column: span 2;
-    }
-
-    footer p {
-        max-width: 100%;
-        color: gray;
-        background-color: #f9f2cc;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        font-size: 0.8em;
-    }
-
-    footer h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 200px;
-        margin: 0 auto;
-        font-family: Jost;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1250px){
-        
-    .logo__empresa{
-        min-width: 100px;
-        max-width: 125px;
-    }
-
-    ul,li{
-        list-style: none;
-        font-family: kanit;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    /* Header */
-
-    header{
-        background-color: #f3e394;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header h1{
-        color: #fdfbed;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Nova square;
-        font-size: 1.5em;
-    }
-
-    header a{
-        color: #f9f2cc;
-        border-radius: 10px;
-        font-size: 1em;
-    }
-
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        color: #f9f2cc;
-        background-color: #3f1e09;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-size: 1em;
-    }
-
-
-    /*Main*/
-
-    main{
-        background-color: #f9f2cc;
-    }
-
-    /*Inicio*/
-.combos__section {
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-gap: 3px; 
-    margin: 0; 
-    padding: 1rem;
-}
-
-.combo__semanal1, .combo__semanal2, .combo__semanal3 {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    justify-items: center;
-    align-items: center; 
-    background-color: #ebcd54;
-        border-radius: 10px;
-}
-
-.img__combos {
-    max-width: 310px; 
-    max-height: 320px;
-    padding-left: 3rem;
-}
-
-.text__combos {
-    max-width: 50%; 
-    color: #3f1e09;
-    background-color: #efe898;
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-family: Kanit;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 10px; 
-}
-
-    /* Nosotros */
-
-    .section__title{
-        color: #a45a19;
-        padding: 1rem;
-        font-family: mukta;
-    }
-    
-    .section__text{
-        color: #c67c19;
-        max-width: 500px;
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 0;
-        font-family: nunito;
-    }
-    
-    .section__iframe{
-        padding-top: 0;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-    .nosotros__main {
-        display: flex;
-        justify-content: space-between; 
-        flex-wrap: wrap;
-    }
-    
-    .quienes__somos,
-    .donde__encontrarnos {
-        width: calc(50% - 10px); 
-        margin-bottom: 20px; 
-        box-sizing: border-box; 
-    }   
-    
-    .section__iframe {
-        width: 100%;
-    }
-
-    /* Elegirnos */
-
-    .contenedor__elegirnos{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-    
-    .elegirnos__iconos{
-        min-width: 50px;
-        margin-bottom: 10px;
-    }
-    
-    .div__elegirnos{
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        text-align: center; 
-        margin: 0 auto;
-    }
-    
-    .elegirnos__text{
-        max-width: 300px; 
-        color: #3f1e09;
-        background-color: #ebcd54;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-        text-align: center;
-        text-align: left;
-        box-sizing: border-box;
-        margin: 10px; 
-        font-size: 0.9em;
-    }
-
-    /* Felinos */
-
-    .contenedor__felinos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px; 
-    }
-    
-    .article__felinos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 400px;
-        overflow: hidden;
-        padding: 2rem;
-    }
-    
-    .img__felinos {
-        max-width: 100%;
-        padding: 1rem;
-    }
-    
-    .texto__felinos {
-        color: #ebcd54;
-        max-width: 500px;
-        padding: 1rem;
-        font-family: nunito;
-        text-align: left;
-        background-color: #8d631b;
-        border-radius: 15px;
-    }
-    
-    /* Productos */
-
-.contenedor__productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.titulo__seccion {
-    text-align: center;
-}
-
-.div__productos {
-    display: grid;
-    grid-template-rows: auto 1fr; 
-    align-items: center;
-    max-width: 350px;
-    padding-left: 70px;
-}
-
-.images__productos {
-    max-width: 300px;
-    max-height: 300px;
-    padding: 1rem;
-}
-
-.text__productos {
-    max-width: 100%;
-    color: #3f1e09;
-    background-color: #ebcd54;
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-family: Kanit;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 10px;
-}
-
-    /* Footer */
-
-    footer{
-        background-color: #f3e394;
-        color: #86471a;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .ayuda__section{
-        grid-column: span 2;
-    }
-
-    footer p {
-        max-width: 100%;
-        color: gray;
-        background-color: #f9f2cc;
-        padding: 8px 10px;
-        border-radius: 10px;
-        font-family: Kanit;
-    }
-
-    footer h3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 200px;
-        margin: 0 auto;
-        font-family: Jost;
-    }
-}
-
-@media screen and (min-width: 1251px) and (max-width: 2140px){
-    /*Links y logo */
-
-.logo__empresa{
-    min-width: 170px;
-    max-width: 150px;
-}
-
-body{
-    background-color: #f3e394;
-}
-
-a{
-    text-decoration: none;
-}
-
-ul,li{
+/* Estilos en las listas y texto. ( MediaQuerie 1251-2140px ) */
+@media screen and (min-width: 360px) and (max-width: 559px) {
+  .logo__empresa {
+    max-width: 100px;
+  }
+  ul, li {
     list-style: none;
-    font-family: kanit;
-}
-
-/* Header */
-
-header{
-    background-color: #f3e394;
+    font-family: Kanit;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 150px;
-}
-
-header a{
-    color: #3f1e09;
-    padding: 8px 10px;
-    border-radius: 10px;
-}
-
-header h1{
+  }
+  h1 {
     color: #fdfbed;
     background-color: #ebcd54;
     padding: 8px 10px;
     border-radius: 10px;
     font-family: Nova square;
-}
-
-header nav ul{
+    font-size: 9px;
+  }
+  header a {
+    color: #f9f2cc;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  header nav ul {
     display: flex;
-    gap: 1rem;
-}
-
-.link__header:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    transition-duration: .5s;
-    background-color: #ebcd54;
-    border-radius: 15px;
-}
-
-/* Main */
-main{
-    background-color: #f9f2cc;
-    padding: 1rem;
-}
-
-/*Inicio*/
-
-.combos__section {
+    flex-direction: column;
+    color: #f9f2cc;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  /* Inicio */
+  .combos__section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    margin: 0; 
-}
-
-.combo__semanal1, .combo__semanal2, .combo__semanal3 {
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .combo__semanal {
     display: grid;
     grid-template-rows: auto 1fr;
     justify-items: center;
-}
-
-.img__combos {
-    max-width: 370px; 
-    max-height: 250px;
-    padding: 1rem;
-}
-
-.text__combos {
-    max-width: 50%; 
-    color: #3f1e09;
-    background-color: #ebcd54;
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-family: Kanit;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 10px; 
-}
-
-/* Nosotros */
-.section__title{
-    color: #a45a19;
-    padding: 1rem;
-    font-family: mukta;
-}
-
-.section__text{
-    color: #c67c19;
-    max-width: 500px;
-    padding-top: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0;
-    font-family: nunito;
-}
-
-.section__iframe{
-    padding-top: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-}
-
-.nosotros__main {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;
-}
-
-.quienes__somos,
-.donde__encontrarnos {
-    width: calc(50% - 10px); 
-    margin-bottom: 20px; 
-    box-sizing: border-box; 
-}   
-
-.section__iframe {
-    width: 100%;
-}
-
-/* Elegirnos */
-
-.contenedor__elegirnos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.elegirnos__iconos{
-    min-width: 50px;
-    margin-bottom: 10px;
-}
-
-.div__elegirnos{
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
-    margin: 0 auto;
-}
-
-.elegirnos__text{
-    max-width: 300px; 
-    color: #3f1e09;
-    background-color: #ebcd54;
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-family: Kanit;
-    text-align: center;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 10px; 
-}
-
-
-
-/* Felinos */
-
-.contenedor__felinos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.article__felinos{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 400px;
-    overflow: hidden;
-    
-}
-
-.texto__felinos {
-    max-width: 100%;
+    border-radius: 10px;
+  }
+  .img__combos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__combos {
+    max-width: 70%;
     color: #3f1e09;
     background-color: #ebcd54;
     padding: 8px 10px;
@@ -1041,42 +85,112 @@ main{
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
-}
-
-.img__felinos {
-    max-height: 250px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
     padding: 1rem;
-}
-
-
-/* Productos */
-
-.contenedor__productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.titulo__seccion {
-    text-align: center;
-}
-
-.div__productos {
-    display: grid;
-    grid-template-rows: auto 1fr; 
-    align-items: center;
-    max-width: 350px;
-    padding-left: 20px;
-}
-
-.images__productos {
-    max-width: 380px;
-    max-height: 250px;
-    padding: 1rem;
-}
-
-.text__productos {
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
     max-width: 100%;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  .img__felinos {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .texto__felinos {
+    color: #ebcd54;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #8d631b;
+    border-radius: 15px;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .images__productos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__productos {
+    max-width: 70%;
     color: #3f1e09;
     background-color: #ebcd54;
     padding: 8px 10px;
@@ -1084,23 +198,485 @@ main{
     font-family: Kanit;
     text-align: left;
     box-sizing: border-box;
-    margin: 5px;
+    margin: 10px;
+  }
+  /* Footer */
+  footer {
+    padding: 1rem;
+  }
+  .contenedor__footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  footer .logo__empresa {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    order: 1;
+  }
+  .contenido__footer {
+    text-align: center;
+    margin-bottom: 20px;
+    order: 2;
+  }
+  footer p {
+    color: gray;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 0.7rem;
+  }
+  footer h3 {
+    font-family: Jost;
+    color: #a45a19;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    order: 3;
+  }
+  .logos__redes {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .logos__redes:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    order: 4;
+  }
 }
-
-
-/* Footer */
-
-footer {
-    background-color: #f3e394;
-    color: #86471a;
+@media screen and (min-width: 560px) and (max-width: 614px) {
+  .logo__empresa {
+    max-width: 100px;
+  }
+  ul, li {
+    list-style: none;
+    font-family: Kanit;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: #fdfbed;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Nova square;
+    font-size: 1rem;
+  }
+  header a {
+    color: #f9f2cc;
+    border-radius: 10px;
+    font-size: 0.8em;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    color: #f9f2cc;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  /* Inicio */
+  .combos__section {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .combo__semanal {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .img__combos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__combos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
+    padding: 1rem;
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
+    max-width: 100%;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  .img__felinos {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .texto__felinos {
+    color: #ebcd54;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #8d631b;
+    border-radius: 15px;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .images__productos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__productos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Footer */
+  footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 280px;
+  }
+  .contenedor__footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 25px;
+  }
+  .contenido__contacto {
+    text-align: left;
+  }
+  footer p {
+    color: gray;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 0.5rem;
+  }
+  footer h3 {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Jost;
+    color: #a45a19;
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+  .logos__redes {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .logos__redes:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (min-width: 615px) and (max-width: 768px) {
+  .logo__empresa {
+    max-width: 150px;
+  }
+  ul, li {
+    list-style: none;
+    font-family: Kanit;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: #fdfbed;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Nova square;
+    font-size: 1rem;
+  }
+  header a {
+    color: #f9f2cc;
+    border-radius: 10px;
+    font-size: 0.8em;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    color: #f9f2cc;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  /* Inicio */
+  .combos__section {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .combo__semanal {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .img__combos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__combos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
+    padding: 1rem;
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
+    max-width: 100%;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  .img__felinos {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .texto__felinos {
+    color: #ebcd54;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #8d631b;
+    border-radius: 15px;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .images__productos {
+    max-width: 310px;
+    max-height: 320px;
+    border-radius: 25px;
+  }
+  .text__productos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Footer */
+  footer {
     padding: 1rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     max-height: 280px;
-}
-
-.contenedor__footer {
+  }
+  .contenedor__footer {
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -1110,38 +686,769 @@ footer {
     grid-template-columns: auto 1fr auto;
     gap: 20px;
     align-items: center;
-    padding:25px;
+    padding: 25px;
+  }
+  .contenido__contacto {
+    text-align: left;
+  }
+  footer p {
+    color: gray;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 0.7rem;
+  }
+  footer h3 {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Jost;
+    color: #a45a19;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  .logos__redes {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .logos__redes:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
 }
-
-.contenido__contacto {
-    text-align: left; 
+@media screen and (min-width: 769px) and (max-width: 1230px) {
+  .logo__empresa {
+    max-width: 170px;
+  }
+  ul, li {
+    list-style: none;
+    font-family: Kanit;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: #fdfbed;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Nova square;
+    font-size: 1.5rem;
+  }
+  header a {
+    color: #f9f2cc;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    color: #f9f2cc;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  /* Inicio */
+  .combos__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+    margin: 0;
+    padding: 1rem;
+  }
+  .combo__semanal {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #ebcd54;
+    border-radius: 10px;
+  }
+  .img__combos {
+    max-width: 310px;
+    max-height: 320px;
+    padding-left: 3rem;
+    border-radius: 15px;
+  }
+  .text__combos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #f3e394;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
+    padding: 1rem;
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
+    max-width: 100%;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  .img__felinos {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .texto__felinos {
+    color: #ebcd54;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #8d631b;
+    border-radius: 15px;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    max-width: 350px;
+    padding-left: 70px;
+  }
+  .images__productos {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 1rem;
+  }
+  .text__productos {
+    max-width: 100%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Footer */
+  footer {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-height: 280px;
+  }
+  .contenedor__footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 25px;
+  }
+  .contenido__contacto {
+    text-align: left;
+  }
+  footer p {
+    color: gray;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 0.9rem;
+  }
+  footer h3 {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Jost;
+    color: #a45a19;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  .logos__redes {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .logos__redes:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
 }
-
-footer p {
+@media screen and (min-width: 1231px) and (max-width: 1631px) {
+  ul, li {
+    font-family: Kanit;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: #3f1e09;
+  }
+  p {
+    font-family: Kanit;
+  }
+  h1 {
+    font-family: Nova Square;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 15px;
+    color: #fdfbed;
+  }
+  h2 {
+    font-family: mukta;
+  }
+  h3 {
+    font-family: Jost;
+  }
+  .logo__empresa {
+    max-width: 200px;
+  }
+  /* Header */
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 150px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .link__header:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    background-color: #ebcd54;
+    border-radius: 20px;
+  }
+  /* Inicio */
+  .combos__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .combo__semanal {
+    display: grid;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+  }
+  .img__combos {
+    max-width: 370px;
+    max-height: 250px;
+    padding: 1rem;
+  }
+  .text__combos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
+    padding: 1rem;
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
+    max-width: 500px;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 90%;
+  }
+  .nosotros__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .quienes__somos, .donde__encontrarnos {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+  }
+  .texto__felinos {
+    max-width: 100%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .img__felinos {
+    max-height: 250px;
+    padding: 1rem;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    max-width: 350px;
+    padding-left: 20px;
+  }
+  .images__productos {
+    max-width: 380px;
+    max-height: 250px;
+    padding: 1rem;
+  }
+  .text__productos {
+    max-width: 100%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  /* Footer */
+  footer {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-height: 280px;
+  }
+  .contenedor__footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 25px;
+  }
+  .contenido__contacto {
+    text-align: left;
+  }
+  footer p {
     color: gray;
     padding: 8px 10px;
     border-radius: 10px;
     font-family: Kanit;
     font-size: 1.1rem;
-}
-
-footer h3 {
+  }
+  footer h3 {
     max-width: 200px;
     margin: 0 auto;
     font-family: Jost;
+    color: #a45a19;
     font-size: 1.5rem;
     padding-bottom: 10px;
-}
-
-.logos__redes{
+  }
+  .logos__redes {
     padding-top: 5px;
     padding-bottom: 25px;
-}
-
-.logos__redes:hover{
+  }
+  .logos__redes:hover {
     transform: scale(1.3);
-    transition: .5s;
-    transition-duration: .5s;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (min-width: 1632px) and (max-width: 2140px) {
+  ul, li {
+    font-family: Kanit;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: #3f1e09;
+  }
+  p {
+    font-family: Kanit;
+  }
+  h1 {
+    font-family: Nova Square;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 15px;
+    color: #fdfbed;
+  }
+  h2 {
+    font-family: mukta;
+  }
+  h3 {
+    font-family: Jost;
+  }
+  .logo__empresa {
+    max-width: 200px;
+  }
+  /* Header */
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 150px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .link__header:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    background-color: #ebcd54;
+    border-radius: 20px;
+  }
+  /* Inicio */
+  .combos__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+  .combo__semanal {
+    display: grid;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+  }
+  .img__combos {
+    max-width: 370px;
+    max-height: 250px;
+    padding: 1rem;
+  }
+  .text__combos {
+    max-width: 50%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Nosotros */
+  .section__title {
+    color: #a45a19;
+    padding: 1rem;
+    font-family: mukta;
+  }
+  .section__text {
+    color: #a45a19;
+    max-width: 500px;
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-family: nunito;
+  }
+  .section__iframe {
+    padding-top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 90%;
+  }
+  .nosotros__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .quienes__somos, .donde__encontrarnos {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  /* Elegirnos */
+  .contenedor__elegirnos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elegirnos__iconos {
+    min-width: 50px;
+    margin-bottom: 10px;
+  }
+  .div__elegirnos {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .elegirnos__text {
+    max-width: 300px;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  /* Felinos */
+  .contenedor__felinos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .article__felinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    overflow: hidden;
+  }
+  .texto__felinos {
+    max-width: 100%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .img__felinos {
+    max-height: 250px;
+    padding: 1rem;
+  }
+  /* Productos */
+  .contenedor__productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .titulo__seccion {
+    text-align: center;
+  }
+  .div__productos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    max-width: 350px;
+    padding-left: 20px;
+  }
+  .images__productos {
+    max-width: 380px;
+    max-height: 250px;
+    padding: 1rem;
+  }
+  .text__productos {
+    max-width: 100%;
+    color: #3f1e09;
+    background-color: #ebcd54;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  /* Footer */
+  footer {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-height: 280px;
+  }
+  .contenedor__footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f2cc;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 25px;
+  }
+  .contenido__contacto {
+    text-align: left;
+  }
+  footer p {
+    color: gray;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 1.1rem;
+  }
+  footer h3 {
+    max-width: 200px;
+    margin: 0 auto;
+    font-family: Jost;
+    color: #a45a19;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+  .logos__redes {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .logos__redes:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
 }
 
-}
+/*# sourceMappingURL=style.css.map */
