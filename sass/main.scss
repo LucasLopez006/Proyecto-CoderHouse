@@ -15,27 +15,12 @@ $display-grid: grid;
 $display-flex: flex;
 $align-center: center;
 $width-100: 100%;
+@use "_reseteomargen.scss";
+@use "_fondosections.scss";
 
-/* Reseteo del margen. */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Estilos en las listas y texto. ( MediaQueries 365px-2140px ) */
 
-/* Fondos de colores para las secciones. */
-
-footer, header, body{
-    background-color: $background-color;
-}
-
-main{
-    background-color: $main-background;
-}
-
-/* Estilos en las listas y texto. ( MediaQuerie 1251-2140px ) */
-
-@media screen and (min-width:360px) and (max-width:559px) {
+@media screen and (min-width:365px) and (max-width:559px) {
     .logo__empresa{
         max-width: 100px;
     }
