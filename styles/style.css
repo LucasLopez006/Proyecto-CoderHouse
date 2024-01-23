@@ -15,7 +15,7 @@ main {
 }
 
 /* Estilos en las listas y texto. ( MediaQueries 365px-2140px ) */
-@media screen and (min-width: 365px) and (max-width: 559px) {
+@media screen and (min-width: 315px) and (max-width: 559px) {
   .logo__empresa {
     max-width: 100px;
   }
@@ -39,7 +39,7 @@ main {
     padding: 8px 10px;
     border-radius: 10px;
     font-family: Nova square;
-    font-size: 9px;
+    font-size: 1rem;
   }
   header a {
     color: #f9f2cc;
@@ -53,7 +53,8 @@ main {
     background-color: #3f1e09;
     padding: 8px 10px;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 1px;
+    padding-left: 10px;
   }
   /* Inicio */
   .combos__section {
@@ -71,7 +72,7 @@ main {
     border-radius: 10px;
   }
   .img__combos {
-    max-width: 310px;
+    max-width: 210px;
     max-height: 320px;
     border-radius: 25px;
   }
@@ -85,6 +86,7 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+    font-size: 12px;
   }
   /* Nosotros */
   .section__title {
@@ -111,7 +113,7 @@ main {
   /* Elegirnos */
   .contenedor__elegirnos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   .elegirnos__iconos {
@@ -185,7 +187,7 @@ main {
     border-radius: 10px;
   }
   .images__productos {
-    max-width: 310px;
+    max-width: 210px;
     max-height: 320px;
     border-radius: 25px;
   }
@@ -199,6 +201,7 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+    font-size: 12px;
   }
   /* Footer */
   footer {
@@ -321,6 +324,20 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .text__combos:hover {
+    max-width: 50%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Nosotros */
   .section__title {
     color: #a45a19;
@@ -374,6 +391,22 @@ main {
     margin: 10px;
     font-size: 0.9em;
   }
+  .elegirnos__text:hover {
+    max-width: 300px;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Felinos */
   .contenedor__felinos {
     display: grid;
@@ -393,13 +426,25 @@ main {
     padding: 1rem;
   }
   .texto__felinos {
-    color: #ebcd54;
+    color: #3f1e09;
     max-width: 400px;
     padding: 1rem;
     font-family: nunito;
     text-align: left;
-    background-color: #8d631b;
+    background-color: #ebcd54;
     border-radius: 15px;
+  }
+  .texto__felinos:hover {
+    color: #f3e394;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #3f1e09;
+    border-radius: 15px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Productos */
   .contenedor__productos {
@@ -434,6 +479,20 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+  }
+  .text__productos:hover {
+    max-width: 50%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Footer */
   footer {
@@ -554,6 +613,20 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .text__combos:hover {
+    max-width: 50%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Nosotros */
   .section__title {
     color: #a45a19;
@@ -607,6 +680,22 @@ main {
     margin: 10px;
     font-size: 0.9em;
   }
+  .elegirnos__text:hover {
+    max-width: 300px;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Felinos */
   .contenedor__felinos {
     display: grid;
@@ -626,13 +715,25 @@ main {
     padding: 1rem;
   }
   .texto__felinos {
-    color: #ebcd54;
+    color: #3f1e09;
     max-width: 400px;
     padding: 1rem;
     font-family: nunito;
     text-align: left;
-    background-color: #8d631b;
+    background-color: #ebcd54;
     border-radius: 15px;
+  }
+  .texto__felinos:hover {
+    color: #f3e394;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #3f1e09;
+    border-radius: 15px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Productos */
   .contenedor__productos {
@@ -667,6 +768,20 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+  }
+  .text__productos:hover {
+    max-width: 50%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Footer */
   footer {
@@ -773,6 +888,18 @@ main {
     background-color: #ebcd54;
     border-radius: 10px;
   }
+  .combo__semanal:hover {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #ebcd54;
+    border-radius: 10px;
+    transform: scale(1.02);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
   .img__combos {
     max-width: 310px;
     max-height: 320px;
@@ -843,6 +970,22 @@ main {
     margin: 10px;
     font-size: 0.9em;
   }
+  .elegirnos__text:hover {
+    max-width: 300px;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 0.9em;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
   /* Felinos */
   .contenedor__felinos {
     display: grid;
@@ -862,13 +1005,25 @@ main {
     padding: 1rem;
   }
   .texto__felinos {
-    color: #ebcd54;
+    color: #3f1e09;
     max-width: 400px;
     padding: 1rem;
     font-family: nunito;
     text-align: left;
-    background-color: #8d631b;
+    background-color: #ebcd54;
     border-radius: 15px;
+  }
+  .texto__felinos:hover {
+    color: #f3e394;
+    max-width: 400px;
+    padding: 1rem;
+    font-family: nunito;
+    text-align: left;
+    background-color: #3f1e09;
+    border-radius: 15px;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.5s;
   }
   /* Productos */
   .contenedor__productos {
@@ -901,6 +1056,20 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+  }
+  .text__productos:hover {
+    max-width: 100%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.5s;
   }
   /* Footer */
   footer {
@@ -1014,6 +1183,15 @@ main {
     grid-template-rows: auto 1fr;
     justify-items: center;
   }
+  .combo__semanal:hover {
+    display: grid;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    transform: scale(1.02);
+    transition: 0.5s;
+    transition-duration: 0.5s;
+  }
   .img__combos {
     max-width: 370px;
     max-height: 250px;
@@ -1029,6 +1207,20 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+  }
+  .text__combos:hover {
+    max-width: 70%;
+    max-height: 70%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: 0.05s;
+    transition-duration: 0.5s;
   }
   /* Nosotros */
   .section__title {
@@ -1092,6 +1284,21 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .elegirnos__text:hover {
+    max-width: 300px;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Felinos */
   .contenedor__felinos {
     display: grid;
@@ -1116,6 +1323,19 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .texto__felinos:hover {
+    max-width: 100%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   .img__felinos {
     max-height: 250px;
     padding: 1rem;
@@ -1124,7 +1344,7 @@ main {
   .contenedor__productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   .titulo__seccion {
     text-align: center;
@@ -1151,6 +1371,19 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 5px;
+  }
+  .text__productos:hover {
+    max-width: 100%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Footer */
   footer {
@@ -1280,6 +1513,19 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .text__combos:hover {
+    max-width: 50%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Nosotros */
   .section__title {
     color: #a45a19;
@@ -1344,6 +1590,21 @@ main {
     box-sizing: border-box;
     margin: 10px;
   }
+  .elegirnos__text:hover {
+    max-width: 300px;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.8s;
+  }
   /* Felinos */
   .contenedor__felinos {
     display: grid;
@@ -1368,6 +1629,20 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+  }
+  .texto__felinos:hover {
+    max-width: 100%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.05);
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   .img__felinos {
     max-height: 250px;
@@ -1405,6 +1680,19 @@ main {
     text-align: left;
     box-sizing: border-box;
     margin: 5px;
+  }
+  .text__productos:hover {
+    max-width: 100%;
+    color: #f3e394;
+    background-color: #3f1e09;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: 0.5s;
+    transition-duration: 0.8s;
   }
   /* Footer */
   footer {

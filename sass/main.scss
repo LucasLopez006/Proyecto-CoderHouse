@@ -36,7 +36,7 @@ main{
 
 /* Estilos en las listas y texto. ( MediaQueries 365px-2140px ) */
 
-@media screen and (min-width:365px) and (max-width:559px) {
+@media screen and (min-width:315px) and (max-width:559px) {
     .logo__empresa{
         max-width: 100px;
     }
@@ -65,7 +65,7 @@ main{
         padding: 8px 10px;
         border-radius: 10px;
         font-family: Nova square;
-        font-size: 9px;
+        font-size: 1rem;
     }
 
     header a{
@@ -81,7 +81,8 @@ main{
         background-color: #3f1e09;
         padding: 8px 10px;
         border-radius: 10px;
-        font-size: 1em;
+        font-size: 1px;
+        padding-left: 10px;
     }
 
     /* Inicio */
@@ -103,7 +104,7 @@ main{
     }
 
     .img__combos {
-        max-width: 310px; 
+        max-width: 210px; 
         max-height: 320px;
         border-radius: 25px;
     }
@@ -118,6 +119,7 @@ main{
         text-align: left;
         box-sizing: border-box;
         margin: 10px; 
+        font-size: 12px;
     }
 
     /* Nosotros */
@@ -150,7 +152,7 @@ main{
 
     .contenedor__elegirnos{
         display: $display-grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 20px;
     }
 
@@ -237,7 +239,7 @@ main{
     }
 
     .images__productos{
-        max-width: 310px; 
+        max-width: 210px; 
         max-height: 320px;
         border-radius: 25px;
     }
@@ -252,6 +254,7 @@ main{
         text-align: left;
         box-sizing: border-box;
         margin: 10px;
+        font-size: 12px;
     }
 
     /* Footer */
@@ -399,6 +402,21 @@ footer p {
         margin: 10px; 
     }
 
+    .text__combos:hover{
+        max-width: 50%; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
+    }
+
     /* Nosotros */
 
     .section__title{
@@ -461,6 +479,23 @@ footer p {
         font-size: 0.9em;
     }
 
+    .elegirnos__text:hover{
+        max-width: 300px; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: $align-center;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        font-size: 0.9em;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
+    }
+
     /* Felinos */
 
     .contenedor__felinos{
@@ -484,13 +519,26 @@ footer p {
     }
 
     .texto__felinos{
-        color: $card-color;
+        color: $link-color;
         max-width: 400px;
         padding: 1rem;
         font-family: $font-nun;
         text-align: left;
-        background-color: $resp-text;
+        background-color: $card-color;
         border-radius: 15px;
+    }
+
+    .texto__felinos:hover{
+        color: $background-color;
+        max-width: 400px;
+        padding: 1rem;
+        font-family: $font-nun;
+        text-align: left;
+        background-color: $link-color;
+        border-radius: 15px;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
     }
 
     /* Productos */
@@ -531,6 +579,21 @@ footer p {
         text-align: left;
         box-sizing: border-box;
         margin: 10px;
+    }
+
+    .text__productos:hover{
+        max-width: 50%;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
     }
 
     /* Footer */
@@ -674,6 +737,21 @@ footer p {
         margin: 10px; 
     }
 
+    .text__combos:hover{
+        max-width: 50%; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
+    }
+
     /* Nosotros */
 
     .section__title{
@@ -736,6 +814,23 @@ footer p {
         font-size: 0.9em;
     }
 
+    .elegirnos__text:hover{
+        max-width: 300px; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: $align-center;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        font-size: 0.9em;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
+    }
+
     /* Felinos */
 
     .contenedor__felinos{
@@ -759,13 +854,26 @@ footer p {
     }
 
     .texto__felinos{
-        color: $card-color;
+        color: $link-color;
         max-width: 400px;
         padding: 1rem;
         font-family: $font-nun;
         text-align: left;
-        background-color: $resp-text;
+        background-color: $card-color;
         border-radius: 15px;
+    }
+
+    .texto__felinos:hover{
+        color: $background-color;
+        max-width: 400px;
+        padding: 1rem;
+        font-family: $font-nun;
+        text-align: left;
+        background-color: $link-color;
+        border-radius: 15px;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
     }
 
     /* Productos */
@@ -806,6 +914,21 @@ footer p {
         text-align: left;
         box-sizing: border-box;
         margin: 10px;
+    }
+
+    .text__productos:hover{
+        max-width: 50%;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px;
+        transform: scale(1.01);
+        transition: .5s;
+        transition-duration: .8s;
     }
 
     /* Footer */
@@ -934,6 +1057,19 @@ footer p {
         border-radius: 10px;
     }
 
+    .combo__semanal:hover{
+        display: $display-grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        justify-items: $align-center;
+        align-items: $align-center; 
+        background-color: $card-color;
+        border-radius: 10px;
+        transform: scale(1.02);
+        transition: .5s;
+        transition-duration: .5s;
+    }
+
     .img__combos {
         max-width: 310px; 
         max-height: 320px;
@@ -1001,6 +1137,7 @@ footer p {
         margin: 0 auto;
     }
 
+
     .elegirnos__text{
         max-width: 300px; 
         color: $link-color;
@@ -1013,6 +1150,23 @@ footer p {
         box-sizing: border-box;
         margin: 10px; 
         font-size: 0.9em;
+    }
+
+    .elegirnos__text:hover{
+        max-width: 300px; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: $align-center;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        font-size: 0.9em;
+        transform: scale(1.05);
+        transition: .5s;
+        transition-duration: .5s;
     }
 
     /* Felinos */
@@ -1038,13 +1192,26 @@ footer p {
     }
 
     .texto__felinos{
-        color: $card-color;
+        color: $link-color;
         max-width: 400px;
         padding: 1rem;
         font-family: $font-nun;
         text-align: left;
-        background-color: $resp-text;
+        background-color: $card-color;
         border-radius: 15px;
+    }
+
+    .texto__felinos:hover{
+        color: $background-color;
+        max-width: 400px;
+        padding: 1rem;
+        font-family: $font-nun;
+        text-align: left;
+        background-color: $link-color;
+        border-radius: 15px;
+        transform: scale(1.05);
+        transition: .5s;
+        transition-duration: .5s;
     }
 
     /* Productos */
@@ -1083,6 +1250,21 @@ footer p {
         text-align: left;
         box-sizing: border-box;
         margin: 10px;
+    }
+
+    .text__productos:hover{
+        max-width: $width-100;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px;
+        transform: scale(1.05);
+        transition: .5s;
+        transition-duration: .5s;
     }
 
     /* Footer */
@@ -1218,6 +1400,16 @@ footer p {
         grid-template-rows: auto 1fr;
         justify-items: center;
     }
+
+    .combo__semanal:hover{
+        display: $display-grid;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+        transform: scale(1.02);
+        transition: .5s;
+        transition-duration: .5s;
+    }
     
     .img__combos{
         max-width: 370px; 
@@ -1235,6 +1427,21 @@ footer p {
         text-align: left;
         box-sizing: border-box;
         margin: 10px; 
+    }
+
+    .text__combos:hover{
+        max-width: 70%; 
+        max-height: 70%;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        transition: .05s;
+        transition-duration: .5s;
     }
     
     /* Nosotros */
@@ -1309,6 +1516,22 @@ footer p {
         box-sizing: border-box;
         margin: 10px; 
     }
+
+    .elegirnos__text:hover{
+        max-width: 300px; 
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: Kanit;
+        text-align: center;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px; 
+        transform: scale(1.05);
+        transition: .5s;
+        transition-duration: .8s;
+    }
     
     /* Felinos */
     
@@ -1338,6 +1561,20 @@ footer p {
         margin: 10px;
     }
     
+    .texto__felinos:hover{
+        max-width: $width-100;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 10px;
+        transition: .5s;
+        transition-duration: .8s;
+    }
+
     .img__felinos{
         max-height: 250px;
         padding: 1rem;
@@ -1348,7 +1585,7 @@ footer p {
     .contenedor__productos{
         display: $display-grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 20px;
+        gap: 10px;
     }
     
     .titulo__seccion{
@@ -1379,6 +1616,20 @@ footer p {
         text-align: left;
         box-sizing: border-box;
         margin: 5px;
+    }
+
+    .text__productos:hover{
+        max-width: $width-100;
+        color: $background-color;
+        background-color: $link-color;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: $text-font;
+        text-align: left;
+        box-sizing: border-box;
+        margin: 5px;
+        transition: .5s;
+        transition-duration: .8s;
     }
     
     /* Footer */
@@ -1534,6 +1785,20 @@ header nav ul{
     margin: 10px; 
 }
 
+.text__combos:hover{
+    max-width: 50%; 
+    color: $background-color;
+    background-color: $link-color;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: $text-font;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px; 
+    transition: .5s;
+    transition-duration: .8s;
+}
+
 /* Nosotros */
 
 .section__title{
@@ -1609,6 +1874,22 @@ header nav ul{
     margin: 10px; 
 }
 
+.elegirnos__text:hover{
+    max-width: 300px; 
+    color: $background-color;
+    background-color: $link-color;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: Kanit;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px; 
+    transform: scale(1.05);
+    transition: .5s;
+    transition-duration: .8s;
+}
+
 /* Felinos */
 
 .contenedor__felinos{
@@ -1636,6 +1917,21 @@ header nav ul{
     text-align: left;
     box-sizing: border-box;
     margin: 10px;
+}
+
+.texto__felinos:hover{
+    max-width: $width-100;
+    color: $background-color;
+    background-color: $link-color;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: $text-font;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 10px;
+    transform: scale(1.05);
+    transition: .5s;
+    transition-duration: .8s;
 }
 
 .img__felinos{
@@ -1680,6 +1976,20 @@ header nav ul{
     text-align: left;
     box-sizing: border-box;
     margin: 5px;
+}
+
+.text__productos:hover{
+    max-width: $width-100;
+    color: $background-color;
+    background-color: $link-color;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-family: $text-font;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: .5s;
+    transition-duration: .8s;
 }
 
 /* Footer */
